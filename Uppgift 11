@@ -15,14 +15,18 @@ public class Main {
 //Skapar en array för varje persons ålder
         int Ages [] = new int[Amount];
 //Ber användaren ange åldrarna, de ska vara mellan 0-130 annars frågar den på nytt
-            for (int i = 0; i < Amount; i++)
-            {
-                do {
-                    int j = i + 1;
-                    System.out.println("Ange ålder för person " + j + ": ");
-                    Ages[i] = input.nextInt();
-                } while (Ages[i] <0 || Ages[i] >130);
-            }
+        for (int i = 0; i < Amount; i++)
+        {
+            do {
+                int j = i + 1;
+                System.out.println("Ange ålder för person " + j + ": ");
+                Ages[i] = input.nextInt();
+            } while (Ages[i] < 0 || Ages[i] > 130);
+        }
+//Ber användaren ge 1-3, andra värden gör att det frågar på nytt
+        System.out.println("1. Visa totalt pris \n2. Visa medelpris per person \n3. Avsluta programmet");
+        int Choice = input.nextInt()
+
     }
 
 
