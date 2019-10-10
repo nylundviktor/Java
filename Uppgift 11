@@ -25,22 +25,17 @@ public class Main {
         }
 //Ber användaren ge 1-3, andra värden gör att det frågar på nytt
         System.out.println("1. Visa totalt pris \n2. Visa medelpris per person \n3. Avsluta programmet");
-        do {
-            int Choice = input.nextInt();
-                if (Choice = 1) {
-                    System.out.println("Visar totalt pris");
-                }
-                else if (Choice = 2) {
-                    System.out.println("Visar medelpris per person");
-                }
-                else {
-                    System.out.println("FELAKTIGT MENYVAL!");
-                }
-
-        } while (Choice != 3);
-
-
+        int Choice = input.nextInt();
+        if (Choice == 1) {
+            System.out.println("Visar totalt pris");
         }
+        else if (Choice == 2) {
+            System.out.println("Visar medelpris per person");
+        }
+        else {
+            System.out.println("FELAKTIGT MENYVAL!");
+        }
+
     }
 
 
