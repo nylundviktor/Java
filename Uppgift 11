@@ -1,0 +1,29 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+//Frågar hur många bokningar
+        System.out.println("HSL App version 0.001\n");
+        System.out.println("Hur många biljetter vill du boka?: ");
+//Låter användaren välja antalet bokningar
+        int Amount = input.nextInt();
+//Skapar en array för varje persons ålder
+        int Ages [] = new int[Amount];
+//Ber användaren ange åldrarna, de ska vara mellan 0-130 annars frågar den på nytt
+            for (int i = 0; i < Amount; i++)
+            {
+                do {
+                    int j = i + 1;
+                    System.out.println("Ange ålder för person " + j + ": ");
+                    Ages[i] = input.nextInt();
+                } while (Ages[i] <0 || Ages[i] >130);
+            }
+    }
+
+
+}
